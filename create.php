@@ -8,9 +8,6 @@ $database = "myshop";
 //Create connection
 $conn = new mysqli($servername, $username, $password, $database);
 
-
-
-
 $name = "";
 $email = "";
 $phone = "";
@@ -50,6 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $successMessage = "Client added correctly!";
 
+        // for redirect to index.php
         header("location: /my-php-project/php-crud/index.php");
         exit;
 
